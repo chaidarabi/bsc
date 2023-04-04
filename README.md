@@ -19,6 +19,8 @@ Blog - https://blog.chetanverma.com/how-to-build-a-portfolio-website-using-nextj
 - Blog Crud (Create, Read, Update, Delete blog with easy to use UI).
 - Dark Mode
 
+ // "headerTaglineOne": "Hello 👋",
+
 
 ### Sections
 

@@ -19,13 +19,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
   return (
     <>
-      <Popover className="block tablet:hidden mt-5">
+      <Popover className="block tablet:hidden mt-5 py-1">
         {({ open }) => (
           <>
-            <div className="flex items-center justify-between p-2 laptop:p-0">
+            <div className="flex items-center justify-between p-2 laptop:p-10 py-7">
               <h1
                 onClick={() => router.push("/")}
-                className="font-medium p-2 laptop:p-0 link"
+                className="font-big p-7 laptop:p-0 link px-3"
               >
                 {name}.
               </h1>

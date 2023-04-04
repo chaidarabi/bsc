@@ -58,7 +58,7 @@ export default function Home() {
       <div className="gradient-circle"></div>
       <div className="gradient-circle-bottom"></div>
 
-      <div className="container mx-auto mb-10">
+      <div className="container mx-auto mb-10 px-10">
         <Header
           handleWorkScroll={handleWorkScroll}
           handleAboutScroll={handleAboutScroll}
@@ -73,13 +73,15 @@ export default function Home() {
             </h1>
             <h1
               ref={textTwo}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-1xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineTwo}
             </h1>
             <h1
               ref={textThree}
-              className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              // className="mt-1 opacity-60 text-3xl p-5"
+              className="font-big p-7 laptop:p-5 link px-7"
+              // className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineThree}
             </h1>
