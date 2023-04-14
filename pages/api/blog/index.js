@@ -10,10 +10,10 @@ export default function handler(req, res) {
     if (req.method === "POST") {
       const data = matter.stringify("# New Blog", {
         date: new Date().toISOString(),
-        title: "New Blog",
-        tagline: "Amazing New Blog",
+        title: "Sepatu - Lebih dari Hanya Penutup Kaki",
+        tagline: "Jadi, sepatu memang lebih dari sekadar penutup kaki. Dari sejarahnya yang panjang hingga posis",
         preview:
-          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "Sepatu telah menjadi bagian penting dari kehidupan manusia sejak ribuan tahun yang lalu. Meskipun awalnya diciptakan hanya sebagai penutup kaki, sepatu kini menjadi lebih dari itu - menjadi simbol mode, status, dan kepribadian. Dari sepatu olahraga hingga sepatu formal, dari sepatu kasual hingga sepatu hak tinggi, ada begitu banyak jenis dan model sepatu yang berbeda untuk memenuhi kebutuhan dan selera individu. Sejarah Sepatu Sejarah sepatu dapat ditelusuri hingga sekitar 8.000 SM ketika manusia pertama kali membuat alas kaki dengan bahan daun dan kulit binatang. Dalam beberapa milenia berikutnya, sepatu berkembang menjadi berbagai bentuk dan desain yang berbeda-beda tergantung pada kebutuhan dan budaya di setiap wilayah. Misalnya, di Mesir kuno, sepatu sandal terbuat dari kulit dengan tali yang digunakan untuk mengikatkan ke kaki. Sementara di Eropa pada Abad Pertengahan, sepatu dengan ujung yang panjang dan melengkung sangat populer. Kemajuan teknologi dan desain membuat sepatu semakin nyaman dan fungsional. Di era modern, sepatu dibuat dari berbagai bahan seperti kanvas, karet, plastik, dan kulit sintetis. Ada juga bahan-bahan khusus seperti Gore-Tex yang digunakan untuk sepatu outdoor agar tetap kering dan nyaman di segala cuaca. Sepatu dan Mode Sepatu tidak hanya berfungsi untuk melindungi kaki, tetapi juga menjadi bagian penting dalam industri mode. Model, merek, dan warna sepatu dapat menjadi cara seseorang mengekspresikan diri dan menunjukkan status sosialnya. Misalnya, sepatu olahraga dari merek terkenal seperti Nike dan Adidas menjadi simbol status di kalangan remaja dan anak muda, sementara sepatu hak tinggi sering dikaitkan dengan profesionalisme dan elegansi dalam pakaian formal. Selain itu, sepatu juga dipakai dalam berbagai acara, seperti pesta, konser, atau pernikahan. Ada banyak model sepatu formal dan semi-formal seperti sepatu oxford, loafer, atau sepatu kets yang cocok untuk berbagai kesempatan.",
         image: getRandomImage(),
       });
       fs.writeFileSync(postsfolder, data, (err) => console.error(err));

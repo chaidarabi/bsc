@@ -69,23 +69,8 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             >
               {!isBlog ? (
                 <div className="grid grid-cols-1">
-                  <Button onClick={handleWorkScroll}>Work</Button>
-                  <Button onClick={handleAboutScroll}>About</Button>
-                  {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
-                  )}
-                  {showResume && (
-                    <Button
-                      onClick={() =>
-                        window.open("mailto:hello@chetanverma.com")
-                      }
-                    >
-                      Resume
-                    </Button>
-                  )}
-
                   <Button
-                    onClick={() => window.open("https://wa.me/6285156076598")}
+                    onClick={() => window.open("https://api.whatsapp.com/send?phone=%6285156500368%5D&text=Halo%20BogorShoesCare")}
                   >
                     Contact
                   </Button>
@@ -95,9 +80,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   <Button onClick={() => router.push("/")} classes="first:ml-1">
                     Home
                   </Button>
-                  {showBlog && (
+                  {/* {showBlog && (
                     <Button onClick={() => router.push("/blog")}>Blog</Button>
-                  )}
+                  )} */}
                   {showResume && (
                     <Button
                       onClick={() => router.push("/resume")}
@@ -108,7 +93,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() => window.open("mailto:hello@chetanverma.com")}
+                    onClick={() => window.open("https://api.whatsapp.com/send?phone=%6285156500368%5D&text=Halo%20BogorShoesCare")}
                   >
                     Contact
                   </Button>
@@ -119,7 +104,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         )}
       </Popover>
       <div
-        className={`mt-10 hidden flex-row items-center justify-between sticky ${
+        className={`mt-10 flex-row hidden items-center justify-between sticky ${
           theme === "light" && "bg-white"
         } dark:text-white top-0 z-10 tablet:flex`}
       >
@@ -132,10 +117,10 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         {!isBlog ? (
           <div className="flex">
             <Button onClick={handleWorkScroll}>Work</Button>
-            <Button onClick={handleAboutScroll}>About</Button>
-            {showBlog && (
+            <Button onClick={handleAboutScroll}>Peeps</Button>
+            {/* {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
+            )} */}
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
@@ -145,7 +130,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
+            <Button onClick={() => window.open("https://api.whatsapp.com/send?phone=%6285156500368%5D&text=Halo%20BogorShoesCare")}>
               Contact
             </Button>
             {mounted && theme && data.darkMode && (
@@ -162,9 +147,9 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         ) : (
           <div className="flex">
             <Button onClick={() => router.push("/")}>Home</Button>
-            {showBlog && (
+            {/* {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
-            )}
+            )} */}
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}

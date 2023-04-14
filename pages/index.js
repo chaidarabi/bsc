@@ -91,12 +91,11 @@ export default function Home() {
             </h1>
           </div>
 
-          <Socials className="mt-2 laptop:mt-5" />
+          <Socials className="mt-2 p-3 laptop:mt-5" />
         </div>
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Our Services.</h1>
-
-          <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+          <h1 className="text-4xl p-3 text-bold">Our Services.</h1>
+          <div className="mt-2 laptop:mt-0 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
               <WorkCard
                 key={project.id}
@@ -109,8 +108,8 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">What People Says</h1>
+      <div className="mt-0 laptop:mt-10 p-2 laptop:p-0" ref={aboutRef}>
+          <h1 className="text-4xl p-3 text-bold">What peeps says.</h1>
           <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
